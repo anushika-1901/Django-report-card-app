@@ -1,11 +1,11 @@
 # Django Report card App
 A student report card generator built with Django
 # Features
-1.Ranking
-2.PDF export 
-3.Search and filter on the basis of subject,name and marks
-4.Total marks of individual student 
-5.Pagination 
+Ranking
+PDF export 
+Search and filter on the basis of subject,name and marks
+Total marks of individual student 
+Pagination 
 # Tech stack used 
 # backend :
 1.Django+MySQL(xampp)
