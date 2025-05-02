@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{student.name}}'s Report</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body class="container mt-4">
+        <h2>{{student.name}}'s Report</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Email :</strong>{{student.email}}</li>
+            <li class="list-group-item"><strong>Address :</strong>{{student.address}}</li>
+            <li class="list-group-item"><strong>Age :</strong>{{student.age}}</li>
+            <li class="list-group-item"><strong>Subject 1 :</strong>{{student.subject1}}</li>
+            <li class="list-group-item"><strong>Subject 2 :</strong>{{student.subject2}}</li>
+            <li class="list-group-item"><strong>Subject 3 :</strong>{{student.subject3}}</li>
+            <li class="list-group-item"><strong>Total Marks :</strong>{{student.total}}</li>
+            <li class="list-group-item"><strong>Rank :</strong>{{rank}}</li>
+            <li class="list-group-item"><strong>Result Date :</strong>{{student.result_date}}</li>
+            
+
+        </ul>
+        <a href="{% url 'student_list' %}" class="btn btn-primary m-5">Back To List</a>
+
+        <a href="{% url 'student_pdf' student.pk %}" class="btn btn-success m-6">Download PDF</a>
+    </body>
+</html>

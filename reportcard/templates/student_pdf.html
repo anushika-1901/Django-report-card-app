@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body {font-family:Arial,sans-serif; font-size:14px;}
+            h2{text-align:center;}
+            ul{list-style:none;padding:0;}
+            li{margin:5px 0;}
+        </style>
+    </head>
+    <body class="container mt-4">
+        <h2>Report card :{{student.name}}</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Email :</strong>{{student.email}}</li>
+            <li class="list-group-item"><strong>Address :</strong>{{student.address}}</li>
+            <li class="list-group-item"><strong>Age :</strong>{{student.age}}</li>
+            <li class="list-group-item"><strong>Subject 1 :</strong>{{student.subject1}}</li>
+            <li class="list-group-item"><strong>Subject 2 :</strong>{{student.subject2}}</li>
+            <li class="list-group-item"><strong>Subject 3 :</strong>{{student.subject3}}</li>
+            <li class="list-group-item"><strong>Total Marks :</strong>{{student.total}}</li>
+            <li class="list-group-item"><strong>Rank :</strong>{{rank}}</li>
+            <li class="list-group-item"><strong>Result Date :</strong>{{student.result_date}}</li>
+            
+
+        </ul>
+        
+    </body>
+</html>
